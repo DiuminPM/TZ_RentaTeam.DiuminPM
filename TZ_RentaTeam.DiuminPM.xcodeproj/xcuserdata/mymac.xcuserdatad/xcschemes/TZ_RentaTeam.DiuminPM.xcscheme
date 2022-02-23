@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   version = "1.3">
+   <BuildAction>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForRunning = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "638A8DD1B59E26F99B38F788"
+               BuildableName = "TZ_RentaTeam.DiuminPM.app"
+               BlueprintName = "TZ_RentaTeam.DiuminPM"
+               ReferencedContainer = "container:TZ_RentaTeam.DiuminPM.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <LaunchAction
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "638A8DD1B59E26F99B38F788"
+            BuildableName = "TZ_RentaTeam.DiuminPM.app"
+            BlueprintName = "TZ_RentaTeam.DiuminPM"
+            ReferencedContainer = "container:TZ_RentaTeam.DiuminPM.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+</Scheme>
