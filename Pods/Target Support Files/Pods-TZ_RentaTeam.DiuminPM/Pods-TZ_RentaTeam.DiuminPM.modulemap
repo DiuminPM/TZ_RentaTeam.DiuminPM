@@ -1,0 +1,6 @@
+framework module Pods_TZ_RentaTeam_DiuminPM {
+  umbrella header "Pods-TZ_RentaTeam.DiuminPM-umbrella.h"
+
+  export *
+  module * { export * }
+}

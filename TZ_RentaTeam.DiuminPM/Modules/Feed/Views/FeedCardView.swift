@@ -15,7 +15,7 @@ class FeedCardView: UIView {
         addSubview(titleLabel)
         layer.cornerRadius = 10
         layer.masksToBounds = true
-        titleLabel.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.2)
+        titleLabel.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.4)
         titleLabel.textAlignment = .center
     }
 
@@ -38,13 +38,15 @@ class FeedCardView: UIView {
             titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor),
             titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
             titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor),
-            titleLabel.heightAnchor.constraint(equalToConstant: 60)
+            titleLabel.heightAnchor.constraint(equalToConstant: 80)
         ])
     }
 
     func update(with viewModel: FeedCardViewModel) {
         titleLabel.text = viewModel.title
+        imageView.setImage(URL(string: viewModel.imageName))
+        imageView.contentMode = .scaleAspectFill
+        titleLabel.numberOfLines = 3
         setNeedsLayout()
-        imageView.image = UIImage(named: viewModel.imageName)
     }
 }

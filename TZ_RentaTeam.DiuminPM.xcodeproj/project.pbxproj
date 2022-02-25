@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		638A8070792D5B9B28EE54ED /* FeedCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A84E650C5480C3747053A /* FeedCardViewModel.swift */; };
 		638A80736D81E3E8108E25BF /* FeedProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A8F76D338EAED4132EDBF /* FeedProtocols.swift */; };
+		638A817163D1B0236039EE0D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A8D91B4A5BC57EFD3CF21 /* NetworkService.swift */; };
 		638A82B833DB70A54C2187B6 /* FeedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A852DB62F02981959020C /* FeedCardView.swift */; };
 		638A82CDA2E9628696FCA88F /* FeedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A8F81E8A4D3E070EDFF63 /* FeedContainer.swift */; };
 		638A8310AAC91EDC516AA769 /* FeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A864D1112B10C79F88AA4 /* FeedInteractor.swift */; };
 		638A84AFE8054F21FB8728FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 638A8CD0D5EE6B2D5D908FF1 /* LaunchScreen.storyboard */; };
-		638A84ED7DDF2D172595C68E /* FeedCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A8DF0BCB59768671FCCE6 /* FeedCardViewModel.swift */; };
+		638A852388D316923B91F4AA /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A87B4A8547361905EA78D /* AppCoordinator.swift */; };
 		638A85AD9FF7A0FC37968140 /* FeedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A8AEF7B3AA68E282C6BC6 /* FeedViewCell.swift */; };
 		638A85E1D821D4849AB3A388 /* ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A8AAC45D7AD23533CF229 /* ReuseIdentifier.swift */; };
 		638A85F365CF96AB54FD1E70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 638A81E77B543265CD54205F /* Assets.xcassets */; };
+		638A87B5D92D006F7978C774 /* NetworkServiceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A84C40978668D8690769C /* NetworkServiceProtocols.swift */; };
+		638A8949F1A642786383AFBD /* NetworkService + Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A85F96C75B757876EE481 /* NetworkService + Articles.swift */; };
+		638A8A7FEC88965DAEF4BFE9 /* UrlFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A8EC0F7E20B4180539CCE /* UrlFactory.swift */; };
 		638A8BCE6C8F132E8EE3A0E2 /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A8F52DEF7B9FD44763414 /* FeedPresenter.swift */; };
 		638A8DA04588AA7047699D5D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A858F2DD93A92902B605F /* FeedViewController.swift */; };
 		638A8DB2EFFF2B68F93B997C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A84B8545BBA3C28011547 /* AppDelegate.swift */; };
+		638A8E71F3C69E93BD854D7A /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A8E325A108D0B9AA51FAF /* UIImageView.swift */; };
+		638A8EED4FD007EE180A42F7 /* AppDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A859677047B91D4495F52 /* AppDependency.swift */; };
 		638A8F06C50782F8CD811F9E /* FeedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A839C5BAD686D19E6EE64 /* FeedRouter.swift */; };
+		77C8D86C66DA4A2B6EC74094 /* Pods_TZ_RentaTeam_DiuminPM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF916AE584780BB2F3D18D61 /* Pods_TZ_RentaTeam_DiuminPM.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,17 +35,27 @@
 		638A839C5BAD686D19E6EE64 /* FeedRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedRouter.swift; sourceTree = "<group>"; };
 		638A84B406357847DDEB0B38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		638A84B8545BBA3C28011547 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		638A84C40978668D8690769C /* NetworkServiceProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocols.swift; sourceTree = "<group>"; };
+		638A84E650C5480C3747053A /* FeedCardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCardViewModel.swift; sourceTree = "<group>"; };
 		638A852DB62F02981959020C /* FeedCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCardView.swift; sourceTree = "<group>"; };
 		638A858F2DD93A92902B605F /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		638A859677047B91D4495F52 /* AppDependency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDependency.swift; sourceTree = "<group>"; };
+		638A85F96C75B757876EE481 /* NetworkService + Articles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NetworkService + Articles.swift"; sourceTree = "<group>"; };
 		638A864D1112B10C79F88AA4 /* FeedInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedInteractor.swift; sourceTree = "<group>"; };
+		638A87B4A8547361905EA78D /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		638A8AAC45D7AD23533CF229 /* ReuseIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReuseIdentifier.swift; sourceTree = "<group>"; };
 		638A8AEF7B3AA68E282C6BC6 /* FeedViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewCell.swift; sourceTree = "<group>"; };
-		638A8DF0BCB59768671FCCE6 /* FeedCardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCardViewModel.swift; sourceTree = "<group>"; };
+		638A8D91B4A5BC57EFD3CF21 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		638A8E325A108D0B9AA51FAF /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		638A8EC0F7E20B4180539CCE /* UrlFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlFactory.swift; sourceTree = "<group>"; };
 		638A8EC6B9CEFDD679AE013F /* TZ_RentaTeam.DiuminPM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TZ_RentaTeam.DiuminPM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		638A8F52DEF7B9FD44763414 /* FeedPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
 		638A8F76D338EAED4132EDBF /* FeedProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedProtocols.swift; sourceTree = "<group>"; };
 		638A8F81E8A4D3E070EDFF63 /* FeedContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedContainer.swift; sourceTree = "<group>"; };
 		638A8FF6C27BD73C81B55187 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		86EF1DE89B43E7303268A7F3 /* Pods-TZ_RentaTeam.DiuminPM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TZ_RentaTeam.DiuminPM.release.xcconfig"; path = "Target Support Files/Pods-TZ_RentaTeam.DiuminPM/Pods-TZ_RentaTeam.DiuminPM.release.xcconfig"; sourceTree = "<group>"; };
+		8D40F105B851FA088CA90B8F /* Pods-TZ_RentaTeam.DiuminPM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TZ_RentaTeam.DiuminPM.debug.xcconfig"; path = "Target Support Files/Pods-TZ_RentaTeam.DiuminPM/Pods-TZ_RentaTeam.DiuminPM.debug.xcconfig"; sourceTree = "<group>"; };
+		DF916AE584780BB2F3D18D61 /* Pods_TZ_RentaTeam_DiuminPM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TZ_RentaTeam_DiuminPM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,12 +63,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77C8D86C66DA4A2B6EC74094 /* Pods_TZ_RentaTeam_DiuminPM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CD1EBE4FF77A9A174C1D5CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D40F105B851FA088CA90B8F /* Pods-TZ_RentaTeam.DiuminPM.debug.xcconfig */,
+				86EF1DE89B43E7303268A7F3 /* Pods-TZ_RentaTeam.DiuminPM.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		56269118E04CF397607579EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF916AE584780BB2F3D18D61 /* Pods_TZ_RentaTeam_DiuminPM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		638A8245C70294C71A62F0DB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +104,8 @@
 				638A8CD0D5EE6B2D5D908FF1 /* LaunchScreen.storyboard */,
 				638A8599A6E25C98FD1E98E4 /* Modules */,
 				638A872CC2582FE433BB9491 /* Helpers */,
+				638A86A6AE8CC6540FAACB68 /* Network */,
+				638A865E64ADF3379D7E09F1 /* Extensions */,
 			);
 			path = TZ_RentaTeam.DiuminPM;
 			sourceTree = "<group>";
@@ -76,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				638A8824739D7B43CA433EF4 /* Feed */,
+				638A87B4A8547361905EA78D /* AppCoordinator.swift */,
+				638A859677047B91D4495F52 /* AppDependency.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -85,7 +125,28 @@
 			children = (
 				638A8245C70294C71A62F0DB /* Products */,
 				638A82DF9A808D4CB9AD9691 /* TZ_RentaTeam.DiuminPM */,
+				0CD1EBE4FF77A9A174C1D5CC /* Pods */,
+				56269118E04CF397607579EB /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		638A865E64ADF3379D7E09F1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				638A8E325A108D0B9AA51FAF /* UIImageView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		638A86A6AE8CC6540FAACB68 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				638A8D91B4A5BC57EFD3CF21 /* NetworkService.swift */,
+				638A84C40978668D8690769C /* NetworkServiceProtocols.swift */,
+				638A85F96C75B757876EE481 /* NetworkService + Articles.swift */,
+				638A8EC0F7E20B4180539CCE /* UrlFactory.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		638A872CC2582FE433BB9491 /* Helpers */ = {
@@ -105,8 +166,8 @@
 				638A864D1112B10C79F88AA4 /* FeedInteractor.swift */,
 				638A8F81E8A4D3E070EDFF63 /* FeedContainer.swift */,
 				638A8C5DD5AFD8942797A3BD /* Views */,
-				638A8DF0BCB59768671FCCE6 /* FeedCardViewModel.swift */,
 				638A892E0F613A9603FF856D /* ViewModels */,
+				638A84E650C5480C3747053A /* FeedCardViewModel.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -135,9 +196,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 638A8A5211DF7443EBDFDD0B /* Build configuration list for PBXNativeTarget "TZ_RentaTeam.DiuminPM" */;
 			buildPhases = (
+				3B42AF7C982F0044674F8989 /* [CP] Check Pods Manifest.lock */,
 				638A824F8DFCEFC9B9D4E177 /* Sources */,
 				638A8A6AC6AAAC7E7FC0A07E /* Frameworks */,
 				638A843D241B4F80A9F0BE85 /* Resources */,
+				06C1D52330A8098D640DA9EC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +217,12 @@
 		638A866E460019DAE23266C0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					638A8DD1B59E26F99B38F788 = {
+						DevelopmentTeam = 4V2Z42C6DZ;
+					};
+				};
 			};
 			buildConfigurationList = 638A8D8E6BFE3A42FD7F5EB4 /* Build configuration list for PBXProject "TZ_RentaTeam.DiuminPM" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -186,6 +255,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06C1D52330A8098D640DA9EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TZ_RentaTeam.DiuminPM/Pods-TZ_RentaTeam.DiuminPM-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TZ_RentaTeam.DiuminPM/Pods-TZ_RentaTeam.DiuminPM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B42AF7C982F0044674F8989 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TZ_RentaTeam.DiuminPM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		638A824F8DFCEFC9B9D4E177 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -200,8 +312,15 @@
 				638A85E1D821D4849AB3A388 /* ReuseIdentifier.swift in Sources */,
 				638A85AD9FF7A0FC37968140 /* FeedViewCell.swift in Sources */,
 				638A82B833DB70A54C2187B6 /* FeedCardView.swift in Sources */,
-				638A84ED7DDF2D172595C68E /* FeedCardViewModel.swift in Sources */,
 				638A8DA04588AA7047699D5D /* FeedViewController.swift in Sources */,
+				638A852388D316923B91F4AA /* AppCoordinator.swift in Sources */,
+				638A817163D1B0236039EE0D /* NetworkService.swift in Sources */,
+				638A87B5D92D006F7978C774 /* NetworkServiceProtocols.swift in Sources */,
+				638A8949F1A642786383AFBD /* NetworkService + Articles.swift in Sources */,
+				638A8A7FEC88965DAEF4BFE9 /* UrlFactory.swift in Sources */,
+				638A8EED4FD007EE180A42F7 /* AppDependency.swift in Sources */,
+				638A8E71F3C69E93BD854D7A /* UIImageView.swift in Sources */,
+				638A8070792D5B9B28EE54ED /* FeedCardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +342,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -282,9 +402,11 @@
 		};
 		638A811FD5BA46D6F94324CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86EF1DE89B43E7303268A7F3 /* Pods-TZ_RentaTeam.DiuminPM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				DEVELOPMENT_TEAM = 4V2Z42C6DZ;
 				INFOPLIST_FILE = TZ_RentaTeam.DiuminPM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "DiuminPM.TZ-RentaTeam-DiuminPM";
@@ -296,9 +418,11 @@
 		};
 		638A82D114FCCF0659590532 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D40F105B851FA088CA90B8F /* Pods-TZ_RentaTeam.DiuminPM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				DEVELOPMENT_TEAM = 4V2Z42C6DZ;
 				INFOPLIST_FILE = TZ_RentaTeam.DiuminPM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "DiuminPM.TZ-RentaTeam-DiuminPM";
@@ -312,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -372,7 +497,7 @@
 				638A811FD5BA46D6F94324CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		638A8D8E6BFE3A42FD7F5EB4 /* Build configuration list for PBXProject "TZ_RentaTeam.DiuminPM" */ = {
 			isa = XCConfigurationList;
@@ -381,7 +506,7 @@
 				638A8EDEFCBA6E54C748D8EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

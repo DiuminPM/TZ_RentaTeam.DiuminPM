@@ -12,16 +12,15 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    private lazy var appDependency: AppDependency = AppDependency.makeDefault()
+    private var appCoordinator: AppCoordinator?
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let context = FeedContext(moduleOutput: nil)
-        let container = FeedContainer.assemble(with: context)
         let window = UIWindow(frame: UIScreen.main.bounds)
-
+        appCoordinator = AppCoordinator(window: window, appDependency: self.appDependency)
         self.window = window
-        window.rootViewController = container.viewController
-        window.makeKeyAndVisible()
+        appCoordinator?.start()
         return true
     }
 

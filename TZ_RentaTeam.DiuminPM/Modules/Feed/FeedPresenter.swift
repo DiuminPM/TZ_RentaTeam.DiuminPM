@@ -14,6 +14,8 @@ final class FeedPresenter {
     
 	private let router: FeedRouterInput
 	private let interactor: FeedInteractorInput
+
+    private  var articles: [Article] = []  // хранение может быть как в интеракторе так и в презентере
     
     init(router: FeedRouterInput, interactor: FeedInteractorInput) {
         self.router = router
@@ -27,16 +29,28 @@ extension FeedPresenter: FeedModuleInput {
 
 extension FeedPresenter: FeedViewOutput {
     func viewDidLoad() {
-        view?.set(viewModels: self.makeViewModels())
+        interactor.loadArticles()
     }
 }
 
 extension FeedPresenter: FeedInteractorOutput {
+    func didEncounterError(_ error: Error) {
+        // TODO: implement error handling
+    }
+
+    func didLoad(_ articles: [Article]) {
+        self.articles = articles
+        self.view?.set(viewModels: self.makeViewModels(self.articles))
+    }
 }
 
 private extension FeedPresenter {
 
-    func makeViewModels() -> [FeedCardViewModel] {
-        return  [FeedCardViewModel(title: "Кокер спаниелб по кличке Чуи", imageName: "chewie")]
+    func makeViewModels(_ articles: [Article]) -> [FeedCardViewModel] {
+        return articles.map { article in
+            FeedCardViewModel(
+                    title: article.title ?? "",
+                    imageName: article.urlToImage ?? "")
+        }
     }
 }
