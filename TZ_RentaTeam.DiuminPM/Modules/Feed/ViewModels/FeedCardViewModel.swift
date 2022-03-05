@@ -7,6 +7,4 @@ import Foundation
 struct FeedCardViewModel {
     let title: String
     let imageName: String
-
-
 }

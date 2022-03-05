@@ -7,6 +7,6 @@ import SDWebImage
 
 extension UIImageView {
     func setImage(_ url: URL?) {
-        self.sd_setImage(with: url, completed: nil)
+        self.sd_setImage(with: url, placeholderImage: nil, options: [.continueInBackground, .progressiveLoad], completed: nil)
     }
 }

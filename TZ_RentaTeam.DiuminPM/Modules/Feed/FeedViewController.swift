@@ -34,7 +34,7 @@ final class FeedViewController: UIViewController {
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        collectionView.frame = view.frame
+        collectionView.frame = view.bounds
     }
 
     override func viewDidLoad() {
@@ -71,16 +71,28 @@ extension FeedViewController: UICollectionViewDataSource {
         let viewModel = viewModels[indexPath.item]
         let cell = collectionView.dequeueCell(cellType: FeedViewCell<FeedCardView>.self, for: indexPath)
         cell.conteinerView.update(with: viewModel)
+        print("1")
         return cell
     }
 }
 
 extension FeedViewController: UICollectionViewDelegateFlowLayout {
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let ratio: CGFloat = 1.3
+        let viewModel = viewModels[indexPath.item]
+        let scalaImage = getScaleImage(imageName: URL(string: viewModel.imageName)!)
         let width = collectionView.frame.width - collectionView.contentInset.left - collectionView.contentInset.right
-        let height = width * ratio
+        let height = width * CGFloat(scalaImage)
+        print("2")
         return  CGSize(width: width, height: height)
     }
+
+    private func getScaleImage(imageName: URL) -> Float {
+        let image = try! UIImage(data: Data(contentsOf: imageName) )
+        let scalaImage = Float((image?.size.height)!) / Float((image?.size.width)!)
+        return scalaImage
+    }
+
 }
+
+
 

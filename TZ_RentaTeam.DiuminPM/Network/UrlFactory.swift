@@ -12,9 +12,9 @@ struct URLFactory {
 
     init(baseURL: URL = URL(string: "https://newsapi.org/v2/")!) {
         let queryItem = URLQueryItem(name: "apiKey", value: URLFactory.apiKey)
-        let params = URLQueryItem(name: "q", value: "Animals")
-        let feedsCount = URLQueryItem(name: "pageSize", value: "50")
-        let languageFeed = URLQueryItem(name: "language", value: "ru")
+        let params = URLQueryItem(name: "q", value: "IPhone")
+        let feedsCount = URLQueryItem(name: "pageSize", value: "5")
+        let languageFeed = URLQueryItem(name: "language", value: "en")
         var urlComponents = URLComponents(url: baseURL, resolvingAgainstBaseURL: false)!
         urlComponents.queryItems = [languageFeed, params, feedsCount, queryItem]
         self.urlComponents = urlComponents

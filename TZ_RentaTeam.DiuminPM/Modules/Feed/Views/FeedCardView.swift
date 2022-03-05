@@ -3,23 +3,26 @@
 //
 
 import UIKit
+import SDWebImage
+
 
 class FeedCardView: UIView {
 
     private let titleLabel = UILabel()
-    private let imageView = UIImageView()
+    let imageView = UIImageView()
 
     override init(frame: CGRect) {
-        super.init(frame: .zero)
+        super.init(frame: frame)
         addSubview(imageView)
         addSubview(titleLabel)
         layer.cornerRadius = 10
         layer.masksToBounds = true
         titleLabel.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.4)
         titleLabel.textAlignment = .center
+
     }
 
-    required override init?(coder: NSCoder) {
+    required init?(coder: NSCoder) {
         fatalError("Unsupported!")
     }
 
@@ -31,8 +34,16 @@ class FeedCardView: UIView {
     private func instalConstraits() {
         translatesAutoresizingMaskIntoConstraints = false
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        imageView.translatesAutoresizingMaskIntoConstraints = false
 
-        imageView.frame = self.frame
+//        imageView.frame = self.frame
+
+        NSLayoutConstraint.activate([
+            imageView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            imageView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            imageView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            imageView.topAnchor.constraint(equalTo: topAnchor)
+        ])
 
         NSLayoutConstraint.activate([
             titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor),
@@ -40,13 +51,15 @@ class FeedCardView: UIView {
             titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor),
             titleLabel.heightAnchor.constraint(equalToConstant: 80)
         ])
+
     }
 
     func update(with viewModel: FeedCardViewModel) {
         titleLabel.text = viewModel.title
         imageView.setImage(URL(string: viewModel.imageName))
-        imageView.contentMode = .scaleAspectFill
+        imageView.contentMode = .scaleToFill
         titleLabel.numberOfLines = 3
         setNeedsLayout()
     }
+
 }
